@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickChat</title>
+  <link rel="manifest" href="manifest.json" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="chat-container">
+    <div id="messages"></div>
+    <input id="fileInput" type="file" accept="image/*,video/*" hidden />
+    <div id="input-bar">
+      <input id="msg" type="text" placeholder="Введіть повідомлення" />
+      <button onclick="sendMessage()">➤</button>
+      <button onclick="document.getElementById('fileInput').click()">📎</button>
+    </div>
+  </div>
+</body>
+</html>
